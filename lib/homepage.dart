@@ -154,6 +154,9 @@ class _HomePageState extends State<HomePage> {
                 )
               ],
             ),
+            SizedBox(
+              height: 10,
+            ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -185,6 +188,16 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(100)),
                   ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                    height: Get.height * 0.21,
+                    width: Get.width * 0.4,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(100)),
+                  )
                 ],
               ),
             )

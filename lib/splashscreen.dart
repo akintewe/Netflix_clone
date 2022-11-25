@@ -19,9 +19,14 @@ class _SplashSreenState extends State<SplashSreen> {
   }
 
   _navigatetologin() async {
-    await Future.delayed(Duration(seconds: 5), () {});
-    Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => IntroPage()));
+    await Future.delayed(Duration(seconds: 4), () {});
+    // Navigator.pushReplacement(
+    //     context, MaterialPageRoute(builder: (context) => IntroPage()));
+    Get.to(
+      IntroPage(),
+      transition: Transition.fadeIn,
+      duration: Duration(seconds: 2),
+    );
   }
 
   @override
