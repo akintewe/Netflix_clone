@@ -19,7 +19,7 @@ class _SplashSreenState extends State<SplashSreen> {
   }
 
   _navigatetologin() async {
-    await Future.delayed(Duration(seconds: 6), () {});
+    await Future.delayed(Duration(seconds: 5), () {});
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => IntroPage()));
   }
@@ -30,7 +30,7 @@ class _SplashSreenState extends State<SplashSreen> {
       backgroundColor: Colors.black,
       body: Center(
         child: Lottie.asset('assets/animations/netflix-logo-dark.json',
-            width: Get.width * 0.4),
+            width: Get.width * 0.5),
       ),
     );
   }
