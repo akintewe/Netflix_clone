@@ -59,6 +59,57 @@ class _HomePageState extends State<HomePage> {
                 ),
               )
             ],
+          ),
+          SizedBox(
+            height: Get.height * 0.01,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Column(
+                children: [
+                  IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.add,
+                        color: Colors.white,
+                        size: 35,
+                      )),
+                  Text(
+                    'My List',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
+              Container(
+                height: Get.height * 0.09,
+                width: Get.width * 0.38,
+                decoration: BoxDecoration(
+                    color: Color.fromRGBO(196, 196, 196, 1),
+                    borderRadius: BorderRadius.circular(10)),
+              ),
+              Column(
+                children: [
+                  IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.info_outline_rounded,
+                        color: Colors.white,
+                        size: 35,
+                      )),
+                  Text(
+                    'Info',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              )
+            ],
           )
         ],
       ),
