@@ -161,32 +161,24 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  Container(
-                    height: Get.height * 0.21,
-                    width: Get.width * 0.4,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(100)),
+                  CircleAvatar(
+                    backgroundImage: AssetImage('assets/images/thechi.jpeg'),
+                    radius: 80,
                   ),
                   SizedBox(
                     width: 10,
                   ),
-                  Container(
-                    height: Get.height * 0.21,
-                    width: Get.width * 0.4,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(100)),
+                  CircleAvatar(
+                    backgroundImage:
+                        AssetImage('assets/images/strangerthings.jpeg'),
+                    radius: 80,
                   ),
                   SizedBox(
                     width: 10,
                   ),
-                  Container(
-                    height: Get.height * 0.21,
-                    width: Get.width * 0.4,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(100)),
+                  CircleAvatar(
+                    backgroundImage: AssetImage('assets/images/The_queen.png'),
+                    radius: 80,
                   ),
                   SizedBox(
                     width: 10,
