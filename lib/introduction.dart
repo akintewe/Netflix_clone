@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 
+import 'homepage.dart';
+
 class IntroPage extends StatefulWidget {
   const IntroPage({super.key});
 
@@ -40,7 +42,11 @@ class _IntroPageState extends State<IntroPage> {
               SizedBox(
                 width: Get.width * 0.2,
               ),
-              Image.asset('assets/images/Group 66.png'),
+              GestureDetector(
+                  onTap: () {
+                    Get.to(HomePage());
+                  },
+                  child: Image.asset('assets/images/Group 66.png')),
               SizedBox(
                 width: Get.width * 0.1,
               ),
