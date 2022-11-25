@@ -11,9 +11,55 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int _selectedIndex = 0;
+  @override
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        iconSize: 20,
+        elevation: 0,
+        backgroundColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
+
+        selectedIconTheme:
+            IconThemeData(color: Color.fromRGBO(41, 179, 87, 1), size: 40),
+        selectedItemColor: Color.fromRGBO(41, 179, 87, 1),
+        selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+        unselectedIconTheme: IconThemeData(
+          color: Color.fromRGBO(41, 179, 87, 1),
+        ),
+        unselectedItemColor: Color.fromRGBO(16, 66, 36, 1),
+        showUnselectedLabels: true,
+        unselectedLabelStyle: TextStyle(
+            fontWeight: FontWeight.bold, color: Color.fromRGBO(16, 66, 36, 1)),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Explore'),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.search,
+              ),
+              label: 'Orders'),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+                size: 35,
+              ),
+              label: 'Profile')
+        ],
+        currentIndex: _selectedIndex, //New
+        onTap: _onItemTapped,
+      ),
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -183,13 +229,10 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(
                     width: 10,
                   ),
-                  Container(
-                    height: Get.height * 0.21,
-                    width: Get.width * 0.4,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(100)),
-                  )
+                  CircleAvatar(
+                    backgroundImage: AssetImage('assets/images/luca.png'),
+                    radius: 80,
+                  ),
                 ],
               ),
             )
