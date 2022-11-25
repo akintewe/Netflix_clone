@@ -85,12 +85,35 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               Container(
-                height: Get.height * 0.09,
-                width: Get.width * 0.38,
-                decoration: BoxDecoration(
-                    color: Color.fromRGBO(196, 196, 196, 1),
-                    borderRadius: BorderRadius.circular(10)),
-              ),
+                  height: Get.height * 0.08,
+                  width: Get.width * 0.38,
+                  decoration: BoxDecoration(
+                      color: Color.fromRGBO(196, 196, 196, 1),
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                          bottom: 20,
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.play_arrow,
+                                color: Colors.black,
+                                size: 60,
+                              ))),
+                      Positioned(
+                          bottom: 20,
+                          right: 20,
+                          child: Text(
+                            'Play',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ))
+                    ],
+                  )),
               Column(
                 children: [
                   IconButton(
