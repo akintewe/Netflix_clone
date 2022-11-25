@@ -27,8 +27,36 @@ class _HomePageState extends State<HomePage> {
                           child: Image.asset(
                             'assets/images/movie.png',
                             fit: BoxFit.cover,
-                          )))
+                          ))),
+                  Positioned(
+                      top: 40,
+                      child: Container(
+                        child: Image.asset('assets/images/navbar.png'),
+                      ))
                 ],
+              )
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: Get.width * 0.06,
+                child: Image.asset(
+                  'assets/images/top10.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+              SizedBox(
+                width: Get.width * 0.02,
+              ),
+              Text(
+                '#2 in Nigeria Today',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 16,
+                ),
               )
             ],
           )
