@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                                 size: 60,
                               ))),
                       Positioned(
-                          bottom: 20,
+                          bottom: 15,
                           right: 20,
                           child: Text(
                             'Play',
@@ -131,6 +131,24 @@ class _HomePageState extends State<HomePage> {
                     ),
                   )
                 ],
+              )
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 10,
+              ),
+              Text(
+                'Previews',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                ),
               )
             ],
           )
