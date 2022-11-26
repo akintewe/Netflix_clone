@@ -28,18 +28,18 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.black,
         type: BottomNavigationBarType.fixed,
 
-        selectedIconTheme:
-            IconThemeData(color: Color.fromRGBO(41, 179, 87, 1), size: 40),
-        selectedItemColor: Color.fromRGBO(41, 179, 87, 1),
-        selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
-        unselectedIconTheme: IconThemeData(
+        selectedIconTheme: const IconThemeData(
+            color: Color.fromRGBO(41, 179, 87, 1), size: 40),
+        selectedItemColor: const Color.fromRGBO(41, 179, 87, 1),
+        selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+        unselectedIconTheme: const IconThemeData(
           color: Color.fromRGBO(41, 179, 87, 1),
         ),
-        unselectedItemColor: Color.fromRGBO(16, 66, 36, 1),
+        unselectedItemColor: const Color.fromRGBO(16, 66, 36, 1),
         showUnselectedLabels: true,
-        unselectedLabelStyle: TextStyle(
+        unselectedLabelStyle: const TextStyle(
             fontWeight: FontWeight.bold, color: Color.fromRGBO(16, 66, 36, 1)),
-        items: <BottomNavigationBarItem>[
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   width: Get.width * 0.02,
                 ),
-                Text(
+                const Text(
                   '#2 in Nigeria Today',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -118,12 +118,12 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.add,
                           color: Colors.white,
                           size: 35,
                         )),
-                    Text(
+                    const Text(
                       'My List',
                       style: TextStyle(
                         color: Colors.white,
@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                     height: Get.height * 0.08,
                     width: Get.width * 0.38,
                     decoration: BoxDecoration(
-                        color: Color.fromRGBO(196, 196, 196, 1),
+                        color: const Color.fromRGBO(196, 196, 196, 1),
                         borderRadius: BorderRadius.circular(10)),
                     child: Stack(
                       children: [
@@ -144,12 +144,12 @@ class _HomePageState extends State<HomePage> {
                             bottom: 20,
                             child: IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.play_arrow,
                                   color: Colors.black,
                                   size: 60,
                                 ))),
-                        Positioned(
+                        const Positioned(
                             bottom: 15,
                             right: 20,
                             child: Text(
@@ -166,12 +166,12 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.info_outline_rounded,
                           color: Colors.white,
                           size: 35,
                         )),
-                    Text(
+                    const Text(
                       'Info',
                       style: TextStyle(
                         color: Colors.white,
@@ -182,11 +182,11 @@ class _HomePageState extends State<HomePage> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
-              children: [
+              children: const [
                 SizedBox(
                   width: 10,
                 ),
@@ -200,13 +200,13 @@ class _HomePageState extends State<HomePage> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [
+                children: const [
                   CircleAvatar(
                     backgroundImage: AssetImage('assets/images/thechi.jpeg'),
                     radius: 80,
